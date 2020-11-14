@@ -18,6 +18,6 @@ class SessionsController < ApplicationController
     session[:omniauth_data] = request.env['omniauth.auth']
 
     # Ye olde redirect
-    redirect_to home_path
+    redirect_to root_path
   end
 end
